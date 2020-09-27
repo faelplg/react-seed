@@ -1,0 +1,13 @@
+@import './styles/abstracts.scss';
+
+html, body, #root {
+  background-color: $background-color;
+}
+
+.App {
+  flex: 1 0 0;
+}
+
+.App__Nav > * {
+  padding: 0.8rem;
+}

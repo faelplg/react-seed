@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500&display=swap');
+
+// Available fonts:
+//
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Libre Baskerville', serif;
+// font-family: 'Fira Code', monospace;
+
+body,
+p,
+.text--body {
+  font-family: 'Libre Baskerville', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+}
+
+caption,
+.text--caption {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 3.2rem;
+}
+
+code,
+.text--code {
+  font-family: 'Fira Code', monospace;
+  background-color: #f5f5f6;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.text--title,
+.text--subhead,
+.text--menu,
+.text--button,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+.text--title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 4.4rem;
+}
+
+h2,
+.text--subhead {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+h3,
+.text--menu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+h4,
+button,
+.text--button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.032rem;
+}
+
+.text--headline,
+.text--display-1,
+.text--display-2,
+.text--display-3,
+.text--display-4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text--headline {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.032rem;
+  text-transform: uppercase;
+}
+
+.text--display-1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.4rem;
+  line-height: 5.2rem;
+}
+.text--display-2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4.5rem;
+  line-height: 6.4rem;
+}
+.text--display-3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+}
+.text--display-4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11.2rem;
+  line-height: 12.8rem;
+}
+
+p {
+  &:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+}

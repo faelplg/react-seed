@@ -1,0 +1,84 @@
+// HTU:
+//
+// animation: enterFromLeft 0.8s ease-out;
+// animation-name: enterFromLeft;
+// animation-duration: 1s;
+// animation-timing-function: ease-out;
+// animation-iteration-count: 3;
+// animation-iteration-count: infinite;
+// animation-delay: 1s;
+// animation-fill-mode: backwards;
+
+/// Animation
+/// Enter from left and move to right.
+@keyframes enterFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+.enterFromLeft {
+  animation: enterFromLeft 0.8s ease-out;
+}
+
+/// Animation
+/// Enter from right and move to left.
+@keyframes enterFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+.enterFromRight {
+  animation: enterFromRight 0.8s ease-out;
+}
+
+/// Animation
+/// Enter from bottom and move to top.
+@keyframes enterFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.enterFromBottom {
+  animation: enterFromBottom 0.8s ease-out;
+}
+
+/// Animation
+/// Enter from top and move to bottom.
+@keyframes enterFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.enterFromTop {
+  animation: enterFromTop 0.8s ease-out;
+}

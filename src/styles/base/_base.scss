@@ -1,0 +1,82 @@
+////
+/// Base styles
+/// @group Base
+/// @author Rafael Goulart (faelplg)
+////
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  position: relative;
+  z-index: 0;
+}
+
+/// Scrollbar style
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #CA3782 #1E0B36;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 24px;
+}
+*::-webkit-scrollbar-track {
+  background: #1E0B36;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #CA3782;
+  border-radius: 0.8rem;
+  border: 4px solid #1E0B36;
+}
+
+/// HTML element - font-size settings
+html {
+  /* This defines what 1rem is.
+   * font-size: 10px; 1 rem is equal to 10px.
+   */
+  font-size: 62.5%; // 10px divided by 16px (root default font-size)
+
+  // phone displays
+  // @media (max-width: 37.5em) {
+  //   font-size: 50%;
+  // }
+
+  // tablet displays - portrait
+  @media (max-width: 75em) {
+    // width < 1200?
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25
+  }
+
+  // tablet displays - portrait
+  @media (max-width: 56.25em) {
+    // width < 900?
+    font-size: 50%; // 1rem = 8px, 8/16 = 50
+  }
+
+  // big displays
+  @media (min-width: 112.5em) {
+    font-size: 75%; // 1 rem = 12, 12/16 = 75
+  }
+}
+
+html,
+body,
+#root {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+}
+
+.container {
+  padding: 2.4rem;
+  @media (max-width: 37.5em) {
+    padding: 0.8rem;
+  }
+}
